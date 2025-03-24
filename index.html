@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Home page for my personal website." />
+    <meta name="keywords" content="home, introduction, brand" />
+    <meta name="author" content="Your Name" />
+    <link rel="shortcut icon" type="image/x-icon" href="images/logo.png" />
+    <title>LeClo</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header and Navbar -->
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/logo.png" alt="Website Logo" />
+          </a>
+        </div>
+        <div class="menu-icon" id="menu-icon">
+          <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links" id="nav-links">
+          <li>
+            <a href="index.html"><i class="fas fa-home"></i> Home</a>
+          </li>
+          <li>
+            <a href="about.html"><i class="fas fa-user"></i> About Me</a>
+          </li>
+          <li>
+            <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+          </li>
+          <li>
+            <a href="blog.html"><i class="fas fa-question-circle"></i>FAQ</a>
+          </li>
+          <li>
+            <a href="portfolio.html"><i class="fas fa-book"></i>Style Guide</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Welcome to LeClo</h1>
+        <p>Explore the Brand</p>
+        <a href="portfolio.html" class="btn">Know More</a>
+      </div>
+    </section>
+
+    <!-- Left and Right Sections -->
+    <main>
+      <!-- Left Section: Text -->
+      <section class="left-section">
+        <div class="left-content">
+          <h2>About My Brand</h2>
+          <p>
+            Leclo is a modern clothing brand that focuses on elegance, comfort,
+            and timeless style. Our mission is to provide high-quality garments
+            that inspire confidence and individuality. Whether you're looking
+            for casual wear or something more formal, we have something for
+            everyone.
+          </p>
+          <p>
+            We believe in sustainability and ethical practices, ensuring that
+            every piece of clothing is made with care and respect for the
+            environment. Join us on this journey to redefine fashion!
+          </p>
+        </div>
+      </section>
+
+      <!-- Right Section: Image and Paragraph -->
+      <section class="right-section">
+        <div class="right-content">
+          <img src="images/fashion.jpg" alt="Fashion Image" />
+          <p>
+            Our latest collection features a blend of modern designs and classic
+            elegance. Perfect for any occasion, our clothing is designed to make
+            you feel confident and stylish.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!-- Overlapping Image Cards Section -->
+        <section class="image-cards">
+            <h2>.....................</h2>
+            <div class="cards-container">
+                <div class="image-card">
+                    <img src="images/collection1.jpg" alt="Collection 1">
+                </div>
+                <div class="image-card">
+                    <img src="images/collection3.jpg" alt="Collection 2">
+                </div>
+                <div class="image-card">
+                    <img src="images/collection4.jpg" alt="Collection 3">
+                </div>
+            </div>
+            <h2>.....................</h2>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 Leclo. All rights reserved.</p>
+      <div class="social-icons">
+        <a href="https://twitter.com" target="_blank"
+          ><i class="fab fa-twitter"></i
+        ></a>
+        <a href="https://linkedin.com" target="_blank"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a href="https://instagram.com" target="_blank"
+          ><i class="fab fa-instagram"></i
+        ></a>
+      </div>
+    </footer>
+
+    <!-- JavaScript for Responsive Navbar -->
+    <script>
+      const menuIcon = document.getElementById("menu-icon");
+      const navLinks = document.getElementById("nav-links");
+
+      menuIcon.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="About Me page for my personal website." />
+    <meta name="keywords" content="about, personal, interests" />
+    <meta name="author" content="Your Name" />
+    <link rel="shortcut icon" type="image/x-icon" href="images/logo.png" />
+    <title>About</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header and Navbar -->
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/logo.png" alt="Website Logo" />
+          </a>
+        </div>
+        <div class="menu-icon" id="menu-icon">
+          <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links" id="nav-links">
+          <li>
+            <a href="index.html"><i class="fas fa-home"></i> Home</a>
+          </li>
+          <li>
+            <a href="about.html"><i class="fas fa-user"></i> About Me</a>
+          </li>
+          <li>
+            <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+          </li>
+          <li>
+            <a href="blog.html"><i class="fas fa-question-circle"></i>FAQ</a>
+          </li>
+          <li>
+            <a href="portfolio.html"><i class="fas fa-book"></i>Style Guide</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- About Me Section -->
+    <main>
+      <section class="about">
+        <h1>About Me</h1>
+        <img
+          src="images/your-picture.jpg"
+          alt="Your Picture"
+          class="profile-pic"
+        />
+        <p>
+          Hi, I'm Harsh, and this is my brand. I'm passionate about growing my
+          brand and much more. Here's a little more about me and my connection
+          to this brand.
+        </p>
+        <p>
+          The name LeClo. This word has some hidden meaning inside it and I can
+          break it for you below. <br />L : Stands for Luxury <br />E : Stands
+          for Elegant <br />C : Stands for Comfort <br />L : Stands for
+          Lifestyle <br />O : Stands for Original <br />At last I can say Leclo
+          = "Luxury Elegance Comfort Lifestyle Originality." <br />This name
+          makes it symbolic i.e. Leclo = "Light + Cloak" – Symbolizing clothing
+          that brings light and positivity to people’s lives.
+        </p>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 LeClo. All rights reserved.</p>
+      <div class="social-icons">
+        <a href="https://twitter.com" target="_blank"
+          ><i class="fab fa-twitter"></i
+        ></a>
+        <a href="https://linkedin.com" target="_blank"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a href="https://instagram.com" target="_blank"
+          ><i class="fab fa-instagram"></i
+        ></a>
+      </div>
+    </footer>
+
+    <!-- JavaScript for Responsive Navbar -->
+    <script>
+      const menuIcon = document.getElementById("menu-icon");
+      const navLinks = document.getElementById("nav-links");
+
+      menuIcon.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
